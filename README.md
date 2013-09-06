@@ -1,5 +1,5 @@
-==bonding module.
-
+bonding module.
+-------
 License
 -------
 Apache License, Version 2.0
@@ -11,7 +11,8 @@ javier.calles@smartmatic.com
 Support
 -------
 https://groups.google.com/forum/#!forum/puppet-venezuela
-Please log tickets and issues at our [Projects site](http://https://groups.google.com/forum/#!forum/puppet-venezuela)
+Please log tickets and issues at our 
+[Projects site](http://https://groups.google.com/forum/#!forum/puppet-venezuela)
 
  == Class: bonding
 
@@ -26,8 +27,8 @@ Please log tickets and issues at our [Projects site](http://https://groups.googl
            |					|
            -------------------------------------
 
- === Variables
-
+Variables
+-------
  Here you should define a list of variables that this module would require.
 
 
