@@ -19,23 +19,20 @@ Please log tickets and issues at our
  Manages and configures the bonding between two network ports on two different cards
  	
  	NIC ONE				NIC TWO
- 	---------------------------------    -----------------------------  
+ 	------------------------------    -----------------------------  
  	|  eth0	| eth1	| eth2	| eth3	|    | eth4 | eth5 | eth6 | eth7 |
- 	|	|	|	|	|    |      |      |      |	 |
- 	---------------------------------    -----------------------------
-           ^					^
-           |					|
-           -------------------------------------
-
+ 	|	      |	     |	     |	     |    |      |      |      |	     |
+ 	------------------------------    -----------------------------
+           ^					                      ^
+           |					                      |
+           -----------------------------
 Variables
 -------
- Here you should define a list of variables that this module would require.
-
 
   dns       =>    #namserver
   bond      =>    #bonding interface
   mode      =>    #balance-rr=0,active-backup =1,balance-xor=2
-  		  #broadcast=3,802.3ad=4,balance-tlb=5,balance-alb=6 
+  		              #broadcast=3,802.3ad=4,balance-tlb=5,balance-alb=6 
   netmask   =>    #Network mask 
   lacp_rate =>    #slow or 0 — Default setting. This specifies that partners 
                   #should transmit LACPDUs every 30 seconds.
@@ -44,8 +41,10 @@ Variables
   domain    =>    #Domain 
 
 
- === Examples
-  	node 'fqdn'  {
+Examples
+-------
+
+  	 node 'fqdn'  {
    	class {'bonding': stage => 'post'}  # Previamente definido en el site.pp sino, solo "include bonding"
   		bonding::config{'bonding':
   			dns       => '10.10.10.11',  
@@ -59,10 +58,10 @@ Variables
   		 }	
 
 
- === Authors
-
+Authors
+------
  Javier Calles  <javier.calles@smartmatic.com>
 
- === Copyright
-
- Copyright 2013 Javier Calles
+Copyright
+------
+Copyright 2013 Javier Calles
