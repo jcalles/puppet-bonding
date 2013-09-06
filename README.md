@@ -19,7 +19,7 @@ Description
 Manages and configures the bonding between two network ports on two different cards
    
  	NIC_ONE	    NIC_TWO
-   eth0______________________________eth4
+   eth0__________eth4
     
     ^				^
     |				|
