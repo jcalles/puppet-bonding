@@ -1,0 +1,6 @@
+<% if scope.lookupvar("::operatingsystemrelease") == '6.0' -%>
+alias <%= bond %> bonding
+<% end -%>
+<% if scope.lookupvar("::operatingsystemrelease") == '6.4' -%>
+alias netdev-<%= bond %> bonding
+<% end -%>

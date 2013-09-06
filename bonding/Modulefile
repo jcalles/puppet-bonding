@@ -1,0 +1,11 @@
+name    'jcalles-bonding'
+version '0.0.1'
+source 'None'
+author 'Javier Calles'
+license 'Apache License, Version 2.0'
+summary 'Manage and configure bonding on RedHat/CentOS. Two interfaces in two different cards'
+description 'Manages and configures the bonding between two network ports on two different cards'
+project_page 'https://github.com/jcalles/puppet-bonding'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

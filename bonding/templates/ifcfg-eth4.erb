@@ -1,0 +1,13 @@
+DEVICE=eth4
+NM_CONTROLLED=yes
+ONBOOT=yes
+HWADDR=<%= scope.lookupvar("::macaddress_eth4") %>
+TYPE=Ethernet
+BOOTPROTO=none
+PREFIX=8
+DNS1=<%= dns %>
+DOMAIN=<%= domain %>
+NAME="System eth4"
+USERCTL=no
+MASTER=<%= bond %>
+SLAVE=yes

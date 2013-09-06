@@ -1,0 +1,11 @@
+DEVICE=<%= bond %>
+IPADDR=<%= ipaddress = scope.lookupvar("::ipaddress") %>
+NETMASK=<%= netmask %>
+BROADCAST=<%= ip_array=ipaddress.split("."); ip_array[3]="255"; ip_array.join(".") %>
+GATEWAY=<%= ip_array[3]="254"; ip_array.join(".") %>
+ONBOOT=yes
+<%if (scope.lookupvar("::operatingsystemrelease") =~ /(6.0|6.4)/) then -%>
+BONDING_OPTS="miimon=<%= miimon %> mode=<%= mode %> lacp_rate=<%= lacp_rate %>"
+<%end -%>
+BOOTPROTO=static
+USERCTL=no
