@@ -1,10 +1,12 @@
 {
-  "dependencies": [
-
-  ],
-  "summary": "Manage and configure bonding on RedHat/CentOS. Two interfaces in two different cards",
-  "source": "None",
+  "name": "jcalles-bonding",
+  "version": "0.0.3",
   "author": "Javier Calles",
+  "summary": "Manage and configure bonding on RedHat/CentOS. Two interfaces in two different cards",
+  "license": "Apache License, Version 2.0",
+  "source": "None",
+  "project_page": "https://github.com/jcalles/puppet-bonding",
+  "issues_url": null,
   "checksums": {
     "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
     "tests/init.pp": "ae3dc205d8b2c4c06da9ded929ffb5c1",
@@ -19,12 +21,11 @@
     "manifests/service.pp": "21b34c69517828298f0cb91ee434e676",
     "README": "fd84de03ca9ab8c581962f02e2d4bca7"
   },
-  "project_page": "https://github.com/jcalles/puppet-bonding",
   "description": "Manages and configures the bonding between two network ports on two different cards",
-  "license": "Apache License, Version 2.0",
-  "version": "0.0.1",
-  "name": "jcalles-bonding",
   "types": [
-
+  
+  ],
+  "dependencies": [
+  
   ]
 }

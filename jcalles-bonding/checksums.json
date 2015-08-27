@@ -1,0 +1,15 @@
+{
+  "Modulefil2": "85b5edf63f1f2658d331b6585af9e2c7",
+  "README.md": "5430db3dc0d2dbcff431d10ac3c9c9c2",
+  "manifests/config.pp": "168e3be2c4d3745a71913724b4980368",
+  "manifests/init.pp": "d1bd543c4d52bcf7b25bbe455dc96ece",
+  "manifests/install.pp": "3b69d4d7416a2e088aa141cb62eba2f2",
+  "manifests/service.pp": "21b34c69517828298f0cb91ee434e676",
+  "metadata.json": "62452a3806093b436cf60c3201fefcb8",
+  "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+  "templates/bonding.conf.erb": "6f59c8281419260bfd6a7b7b612208e7",
+  "templates/ifcfg-bondx.erb": "ebbefd1045d17982e97fe68f2075b360",
+  "templates/ifcfg-eth0.erb": "9a558fcf53214499e8300dfa9474a3dd",
+  "templates/ifcfg-eth4.erb": "c8c6c6b1aaf86c01c32a038c8f6e9761",
+  "tests/init.pp": "ae3dc205d8b2c4c06da9ded929ffb5c1"
+}
